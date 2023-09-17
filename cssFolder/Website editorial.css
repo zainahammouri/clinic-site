@@ -1,6 +1,6 @@
 body{
     background-color: cornflowerblue;
-    background-image: url(../image/HealthcareBackground.png);
+    background-image: url(../image/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -27,69 +27,49 @@ h1{
 /* Styling Grid */
 .gridmain{
     display: grid;
-    grid: 350px 350px auto auto auto ;
-    grid-gap: 10px;
-    color: black;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height:400px;
+    border-radius: 10px;
     text-align: center;
-    font-size: 20px;
 }
-.griditem{
-    
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    width: 40px;
-    height: 100%;
-    margin-top: 10px;
+.griditem1, .griditem2{
+    display: block;
+    text-align: center;
+    margin-left: -50px;
     margin-bottom: 10px;
-    margin-left: 400px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
 }
+
 img{
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-    text-align:center;
+    text-align:left;
     font-size: 20px;
     font-weight:bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    width: 500px;
-    height: 300px;
+    margin-left: 100px;
+    width: 300px;
+    height: 200px;
 }
-button {
-    display: block;
+a>button,a>a:link{
+    display: inline-block;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
+    color: white;
+    background-color: darkcyan;
     font-size: 20px;
     font-weight:bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 220px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
     width: 100px;
-    height:50px ;
-    background-color: darkcyan;
-    color: white;
+    height:50px ; 
+    margin-right: 300px;
+    margin-left: 350px;
+}
+
+a>button:hover,a>a:link:hover{
+    background-color: cornflowerblue;
 }
 /* Styling footer */
 footer {
